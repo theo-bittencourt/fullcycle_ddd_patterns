@@ -63,7 +63,7 @@ describe("Customer unit tests", () => {
     expect(customer.isActive()).toBe(true);
   });
 
-  fit("should notify AddressChangedEvent when changeAddress() is called", () => {
+  it("should notify AddressChangedEvent when changeAddress() is called", () => {
     const customer = new Customer("1", "Customer 1", eventDispatcher);
     const address = new Address("Street 1", 123, "13330-250", "São Paulo");
     customer.Address = address;
